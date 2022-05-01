@@ -1,0 +1,26 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: GettingStartedWithSpringBootJPA
+
+
+# H2 In-memory DB Based Settings #
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  
+  # Hibernate Settings #
+  jpa:
+    hibernate:
+    ddl-auto: create
+    show-sql: true
+
+# Enabling H2 Console
+  h2:
+    console:
+      enabled: true
+
+  # Custom H2 Console URL
+      path: /h2
